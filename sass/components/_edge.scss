@@ -1,19 +1,26 @@
 
 .edge {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-&__list {
-  justify-content: space-between;
+// &__list {
+//   justify-content: space-between;
+// }
+
+// &__item:not(:last-child) {
+//   margin-right: 30px;
+// }
+
+&__item {
+  max-width: 480px;
 }
 
 &__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 10px;
 }
 
-&__item {
-  width: 270px;
-}
 &__item::before {
   display: block;
   content: "";
@@ -51,6 +58,7 @@
   color: $dark-color;
   @include font(14px, 1.14,700);
   text-transform: uppercase;
+  text-align: center;
 }
 
 &__hidden {
@@ -59,7 +67,7 @@
 
 &__text {
   margin: 0px;
-  @include font(14px, 1.71,400);
-  letter-spacing: 0.03em;
+  @include font(14px, 1.71,400,0.03em);
+
 }
 }
