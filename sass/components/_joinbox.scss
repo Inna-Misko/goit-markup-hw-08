@@ -1,6 +1,7 @@
 .join-box__title {
   margin-top: 10px;
   margin-bottom: 20px;
+  text-align: center;
 
   font-family: Roboto;
   @include font(14px,1.14,700);
@@ -13,7 +14,7 @@
   justify-content: center;
 
     &__item {
-    padding-bottom: 30px;       
+    padding-bottom: 60px;       
     }
 
     &__item:not(:last-child) {

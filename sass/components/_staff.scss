@@ -16,6 +16,12 @@
     text-align: center;
     }
 
+    &__photo {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
     &__list {
     flex-wrap: wrap;
     align-items: center;

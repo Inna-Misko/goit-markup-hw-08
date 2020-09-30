@@ -16,8 +16,9 @@
 }
 
 .logo-footer {
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
+  margin-left: 32%;
 
   font-family: "Raleway", sans-serif;
   @include font(26px,1.19,700);
