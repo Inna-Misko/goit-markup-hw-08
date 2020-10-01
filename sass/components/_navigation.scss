@@ -1,8 +1,34 @@
 .nav-box {
-  align-items: center;
-  margin-right: auto;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  // align-items: center;
+  margin: 0px;
+  // margin-right: auto;
+  // padding-top: 16px;
+  // padding-bottom: 16px;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px; 
+  background-color: transparent;
+  border: 0px;
+  outline: transparent;
+}
+
+.icon-burger {
+
+}
+
+.menu-button .icon-cros {
+display: none;
+}
+
+.menu-button.is-open .icon-cros  {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 
 .site-nav {

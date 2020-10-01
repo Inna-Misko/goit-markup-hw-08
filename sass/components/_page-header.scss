@@ -8,6 +8,12 @@
   border-bottom: 1px solid #ECECEC;
 }
 
-.main-header {
-  align-items: center;
-}
+// .main-header {
+//   align-items: center;
+// }
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+    }

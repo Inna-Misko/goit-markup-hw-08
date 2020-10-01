@@ -19,12 +19,23 @@
     <!--Logo, Navigation, Contacts, Шапка сайта-->
 
     <header class="page-header">
-      <div class="container flex-box main-header">
-        <nav class="nav-box flex-box">
+      <div class="container">
+        <div class="nav-container">
           <a href="" class="logo">
             <span class="logo__web">Web</span>
             <span class="logo__studio">Studio</span>
           </a>
+          <nav class="nav-box flex-box">
+          <button class="menu-button is-open" type="button"
+           aria-label="переключатель мобильного меню" 
+           aria-expanded="false"
+           data-menu-button>
+            <svg width="24" height="16">
+              <use class="icon-menu" href="./img/icons/symbol-defs.svg#burger"></use>
+              <use class="icon-cros" href="./img/icons/symbol-defs.svg#vector"></use>
+            </svg>
+          </button>
+          </div>
           <ul class="site-nav flex-box">
             <li class="site-nav__item">
               <a href="" class="site-nav__link site-nav__link--currant">Студия</a>
@@ -36,12 +47,6 @@
               <a href="" class="site-nav__link">Контакты</a>
             </li>
           </ul>
-          <button type="button">
-            <svg width="40" height="40">
-              <use href="./img/icons/symbol-defs.svg#burger"></use>
-              <use href="./img/icons/symbol-defs.svg#vector"></use>
-            </svg>
-          </button>
         </nav>
 
         <address>
@@ -488,8 +493,8 @@
           <button class="form__button">Отправить</button>
         </form>
       </div>
-    </div>
-
-    <script src="./js/modal.js"></script> -->
+    </div>-->
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script> 
   </body>
 </html>

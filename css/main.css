@@ -2,7 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #757575;
   letter-spacing: 0.02em;
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 ul {
@@ -24,6 +24,10 @@ a {
 }
 
 .logo {
+  margin-right: 93px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
@@ -33,7 +37,6 @@ a {
 
 .logo__studio {
   color: #000000;
-  margin-left: -6px;
 }
 
 .logo__web {
@@ -71,19 +74,44 @@ a {
   border-bottom: 1px solid #ECECEC;
 }
 
-.main-header {
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 80px;
 }
 
 .nav-box {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: auto;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  margin: 0px;
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  border: 0px;
+  outline: transparent;
+}
+
+.menu-button .icon-cros {
+  display: none;
+}
+
+.menu-button.is-open .icon-cros {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 
 .site-nav {

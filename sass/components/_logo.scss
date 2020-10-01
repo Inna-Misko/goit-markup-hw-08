@@ -1,13 +1,12 @@
 .logo {
-  // margin-right: 93px;
-  
+  margin-right: 93px;
+  display: inline-flex;
   font-family: "Raleway", sans-serif;
   @include font(26px,1.19,700);
 
 
 &__studio {
   color: $black;
-  margin-left: -6px;
 }
 
 &__web {
