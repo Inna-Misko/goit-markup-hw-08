@@ -1,9 +1,18 @@
-.contacts {
-  display: none;
-}
+// .contacts {
+//   display: none;
+// }
 
-.contacts__item:first-child {
-  margin-right: 50px;
+// .contacts__item:first-child {
+//   margin-right: 50px;
+// }
+
+.contacts__item {
+  display: flex;
+  justify-content: center;
+  
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 
 .contacts__link {
