@@ -33,23 +33,30 @@ display: none;
 
 
 .nav-menu {
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
   background-color: $white;
   width: 100%;
   padding: 60px 15px;
+
+   &.is-open {
+      display: block;
+    }
 }
 
 .site-nav {
-  // display: none;
   margin-left: 0px;
   padding-left: 0px;
 
 &__item {
   margin-bottom: 40px;
   text-align: center;
+  // @include for-size(tablet) {
   // margin-right: 50px;
+  // }
+ 
 
   &:last-child {
     margin-bottom: 60px;

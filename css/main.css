@@ -120,12 +120,17 @@ a {
 }
 
 .nav-menu {
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
   background-color: #ffffff;
   width: 100%;
   padding: 60px 15px;
+}
+
+.nav-menu.is-open {
+  display: block;
 }
 
 .site-nav {
@@ -800,7 +805,7 @@ a {
 .modal {
   position: absolute;
   z-index: 100;
-  padding: 40px;
+  padding: 93px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -808,8 +813,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 528px;
-  height: 581px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

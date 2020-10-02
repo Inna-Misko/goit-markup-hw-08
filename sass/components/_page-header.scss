@@ -12,14 +12,11 @@
 //   align-items: center;
 // }
 .menu-container {
-  // display: none;
+  
   position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
 
-    // // &.is-open {
-    // //   display: block;
-    // }
     }
