@@ -20,14 +20,15 @@
 
     <header class="page-header">
       <div class="container">
-        <div class="menu-container">
+        <div class="tablet-container"> 
+          <div class="mobile-container">
           <a href="" class="logo">
             <span class="logo__web">Web</span>
             <span class="logo__studio">Studio</span>
           </a>
-          <nav class="nav-box">
-          <button class="menu-button is-open" type="button"
+          <button class="menu-button" type="button"
            aria-label="переключатель мобильного меню" 
+           aria-controls="menu-container"
            aria-expanded="false"
            data-menu-button>
             <svg width="24" height="16">
@@ -35,9 +36,10 @@
               <use class="icon-cros" href="./img/icons/symbol-defs.svg#vector"></use>
             </svg>
           </button>
-          </div>
-          <div class="nav-menu is-open" data-menu>
-          <ul class="site-nav flex-box">
+        </div>
+          <div class="menu-container" id="menu-container" data-menu>
+          <nav class="nav-box">
+            <ul class="site-nav flex-box">
             <li class="site-nav__item">
               <a href="" class="site-nav__link site-nav__link--currant">Студия</a>
             </li>
@@ -48,7 +50,6 @@
               <a href="" class="site-nav__link">Контакты</a>
             </li>
           </ul>
-        </nav>
         <address>
           <ul class="contacts flex-box">
             <li class="contacts__item">
@@ -68,6 +69,8 @@
             </li>
           </ul>
         </address>
+        </nav>
+        </div>
         </div>
       </div>
     </header>

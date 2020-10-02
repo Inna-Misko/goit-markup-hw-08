@@ -3,8 +3,10 @@ body {
   color: $main-color;
   letter-spacing: 0.02em;
   padding-top: 60px;
-  // padding-top: 80px;
 
+  @include for-size(tablet) {
+  padding-top: 80px;
+  }
 }
 
 ul {
@@ -19,11 +21,18 @@ a {
 
 .container {
   max-width: 480px;
-  // width: 1200px;
  margin-left: auto;
  margin-right: auto;
  padding-right: 15px;
  padding-left: 15px;
+
+ @include for-size(tablet) {
+   max-width: 768px;
+ }
+
+ @include for-size(desctop) {
+   max-width: 1200px;
+ }
 }
 
 // .flex-box {

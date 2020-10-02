@@ -1,11 +1,12 @@
 .subscribe {
     display: flex;
   justify-content: center;
+  text-align: center;
 
 &__title {
   display: block;
   margin-top: 10px;
-  margin-left: 93px;
+  // margin-left: 93px;
   margin-bottom: 10px;
   font-family: Roboto;
   @include font(14px,1.14,700);
@@ -37,7 +38,6 @@
   width: 200px;
   height: 50px;
   padding: 10px 29px;
-  margin-left: 27%;
   margin-top: 20px;
 
   font-family: Roboto;

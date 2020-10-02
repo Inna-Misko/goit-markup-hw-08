@@ -1,9 +1,10 @@
 .nav-box {
-  // align-items: center;
   margin: 0px;
-  // margin-right: auto;
-  // padding-top: 16px;
-  // padding-bottom: 16px;
+  @include for-size(tablet) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
 }
 
 .menu-button {
@@ -11,8 +12,13 @@
   margin: 0px;
   padding: 0px; 
   background-color: transparent;
-  border: 0px;
+  border: none;
   outline: transparent;
+  
+
+  @include for-size(tablet) {
+    display: none;
+  }
 
 & .icon-cros {
 display: none;
@@ -32,35 +38,48 @@ display: none;
 }
 
 
-.nav-menu {
+.menu-container {
+  text-align: center;
+  background-color: $white;
   display: none;
+  @media screen and(max-width:767px) {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: $white;
   width: 100%;
   padding: 60px 15px;
-
-   &.is-open {
+  }
+    
+     &.is-open {
       display: block;
     }
+
+    @include for-size(tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+   
 }
 
 .site-nav {
-  margin-left: 0px;
-  padding-left: 0px;
+  @include for-size(tablet) {
+    display: flex;
+  }
 
 &__item {
-  margin-bottom: 40px;
-  text-align: center;
-  // @include for-size(tablet) {
-  // margin-right: 50px;
-  // }
- 
+  @media screen and(max-width:676px) {
+    margin-bottom: 40px;
 
-  &:last-child {
+    &:last-child {
     margin-bottom: 60px;
   }
+  }
+  
+  text-align: center;
+  @include for-size(tablet) {
+  margin-right: 50px;
+  }
+ 
 }
 
 

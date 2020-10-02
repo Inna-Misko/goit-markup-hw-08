@@ -25,12 +25,16 @@
 &__title {
   margin: 0px;
   margin-bottom: 30px;
-  // margin-bottom: 40px;
 
   font-weight: 900;
   @include font(26px,1.62,900,0.06em);
   text-align: center;
   text-transform: uppercase;
+
+  @include for-size(desctop) {
+    font-size: 44px;
+     margin-bottom: 40px;
+  }
 
 }
 
