@@ -1,6 +1,9 @@
 
 .work {
-  display: none;
+  @media screen and (max-width:1199px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
   padding-bottom: 94px;
 
 &__title {
@@ -13,6 +16,7 @@
 }
 
 &__list {
+  display: flex;
   height: 294px;
   padding-right: 0px;
   padding-left: 0px;
@@ -41,7 +45,8 @@
         &--box {
         position: absolute;
         bottom: 0;
-
+        
+        display: flex;
         align-items: center;
         justify-content: center;
         width: 370px;
@@ -49,4 +54,5 @@
         background-color: rgba(47, 48, 58, 0.8);
         }
     }
+}
 }

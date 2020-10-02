@@ -31,12 +31,9 @@
   text-align: center;
   text-transform: uppercase;
 
-  @include for-size(desctop) {
-    & {
-      font-size: 44px;
-    margin-bottom: 40px;
-    }
-    
+  @media screen and (min-width: 1200px) { 
+    font-size: 44px;
+    margin-bottom: 40px;    
   }
 
 }
