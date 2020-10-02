@@ -23,25 +23,30 @@
       height: auto;
     }
 
-    &__list {
+    &__list {  
       @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
             }
-       }
       
-       
+    }
+ 
     &__item {
-      @media screen and (min-width: 768px) {
-        width: calc((100% - 30px) / 2);
-      }
-      
-      @media screen and (min-width: 768px) and (max-width: 1199px) {
-        &__item:nth-child(-n + 2) {
+
+      @media screen and (max-width:767px) {
+        &:not(:last-child) {
           margin-bottom: 30px;
         }
       }
+      @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+       }
+      @media screen and (min-width: 1200px) {
+        width: calc((100% -30px) / 4);
+        max-width: 270px;
+      } 
+   
 
     background-color: $white;
 
@@ -65,4 +70,10 @@
         text-align: center;
         }
     }
+}
+  
+.marg {
+  @media screen and(min-width: 768px) and (max-width:1199px) {
+    margin-bottom: 30px;
+  }
 }

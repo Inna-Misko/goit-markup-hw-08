@@ -1,17 +1,24 @@
 .customers {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
+  @media screen and (max-width:1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
 
 
     &__title {
     margin: 0px;
     margin-bottom: 30px;
-    // margin-bottom: 50px;
     color: $dark-color;
     @include font(28px, 1.16,700);
     text-align: center;
+    @media screen and (min-width:1200px) {
+       margin-bottom: 50px;
+    }
     }
 
     &__list {
@@ -21,9 +28,15 @@
  
 
           &-item {
-           width: calc((100% - 30px) / 2);
-          height: 90px;
-          margin-bottom: 30px;
+            height: 90px;
+            margin-bottom: 30px;
+            @media screen and (max-width: 11999px) {
+              width: calc((100% - 30px) / 2);
+            }
+            @media screen and (min-width: 1200px) {
+              width: calc((100% - 30px) / 6);
+              max-width: 170px;
+            }
           }
     
         &-link {
