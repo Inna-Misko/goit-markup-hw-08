@@ -13,24 +13,4 @@
   @include for-size(tablet) {
     min-height: 80px;
 }
-.tablet-container {
-@media screen and(max-width:1199px) {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 768px;
-  height: auto;
-}
-@include for-size(desctop) {
-  min-width: 1200px;
-  height: auto; 
-  }
-}
-@media screen and(max-width:767px) {
-.mobile-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-   }
-  }
 }

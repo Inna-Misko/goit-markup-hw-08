@@ -1,6 +1,5 @@
 .logo {
   display: inline-flex;
-  margin-right: 88px;
   font-family: "Raleway", sans-serif;
   @include font(26px,1.19,700);
 
@@ -8,7 +7,7 @@
     margin-right: 88px;
   }
 
-  @include for-size(desctop) {
+  @include for-size(desktop) {
     margin-right: 93px;
   }
 

@@ -20,19 +20,28 @@ a {
 }
 
 .container {
-  max-width: 480px;
- margin-left: auto;
- margin-right: auto;
- padding-right: 15px;
- padding-left: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
- @include for-size(tablet) {
-   max-width: 768px;
- }
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
 
- @include for-size(desctop) {
-   max-width: 1200px;
- }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 // .flex-box {

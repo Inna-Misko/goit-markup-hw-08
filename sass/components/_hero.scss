@@ -32,8 +32,11 @@
   text-transform: uppercase;
 
   @include for-size(desctop) {
-    font-size: 44px;
-     margin-bottom: 40px;
+    & {
+      font-size: 44px;
+    margin-bottom: 40px;
+    }
+    
   }
 
 }
