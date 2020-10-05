@@ -7,10 +7,10 @@
   z-index: 10;
   border-bottom: 1px solid #ECECEC;
   padding: 16px 15px;
-  @include for-size(tablet-only) {
+  @media screen and (max-width:767px) {
      min-height: 60px;
   }
-  @include for-size(tablet) {
+  @media screen and (min-width:768px) {
     min-height: 80px;
 }
  @media screen and (min-width: 1200px) {

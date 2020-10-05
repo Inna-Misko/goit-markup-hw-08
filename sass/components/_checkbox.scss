@@ -2,8 +2,6 @@
   margin-bottom: 30px;
 
 &__input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   position: absolute;
 }
@@ -25,6 +23,9 @@
 }
 
 &__text {
+  @media screen and (max-width: 1199px) {
+    @include font(12px,1.71,400);
+  }
   @include font(14px,1.71,400);
 }
 
@@ -32,7 +33,9 @@
   font-family: Roboto;
   text-decoration: underline;
   color: $accent-color;
+  @media screen and (max-width: 1199px) {
+    @include font(12px,1.71,400);
+  }
   @include font(14px,1.71,400);
-
 }
 }
