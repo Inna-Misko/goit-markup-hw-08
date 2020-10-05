@@ -1,8 +1,16 @@
 .filter {
+  @media screen and (max-width: 1199px) {
+   padding-top: 60px;
+   padding-bottom: 30px;
+  }
   padding-bottom: 50px;
   padding-top: 94px;
 
 &__box {
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
   display: flex;
   justify-content: center;
 }
@@ -10,6 +18,13 @@
 &__item {
   margin-right: 8px;
 }
+
+@media screen and (max-width: 767px) {
+  &__item {
+  margin-bottom: 15px;
+}
+}
+
 
 &__item:last-child {
   margin-right: 0px;

@@ -20,7 +20,7 @@
   outline: transparent;
   
 
-  @include for-size(tablet) {
+ @media screen and (min-width: 768px) {
     display: none;
   }
 
@@ -58,24 +58,20 @@ display: none;
       display: block;
     }
 
-    @include for-size(tablet) {
+    @media screen and (min-width: 768px) {
         display: flex;
       justify-content: space-between;
     }
-   @media screen and (min-width: 1200px) {
-       display: flex;
-  }
 }
 
 .site-nav {
-  @include for-size(tablet) {
+  @media screen and (min-width: 768px) {
     display: flex;
   }
 
 &__item {
   text-align: center;
   @media screen and (max-width: 767px) {
-
     margin-bottom: 40px;
 
     &:last-child {
@@ -83,7 +79,7 @@ display: none;
   }
   }
   
-  @include for-size(tablet) {
+ @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   margin-right: 50px;
@@ -95,12 +91,8 @@ display: none;
   position: relative;
   display: inline;
   text-align: center;
-
-  // padding-top: 32px;
-  // padding-bottom: 32px;
   color: $dark-color;
   @include font(14px,1.14,500);
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

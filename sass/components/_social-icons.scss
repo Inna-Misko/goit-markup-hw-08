@@ -17,7 +17,6 @@
 
   width: 44px;
   height: 44px;
-  background-color: $white;
   border-radius: 50%;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -26,18 +25,17 @@
 &-link:hover,
 &-link:focus {
   background-color: $accent-color;
+  fill: $white;
 }
 
 &--icon {
-  fill: $social-icon-color;
   width: 20px;
   height: 20px;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-&-link:hover &--icon,
-&-link:focus &--icon {
+&--icon:hover,
+&--icon:focus {
   fill: $white;
 }
 }

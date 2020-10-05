@@ -28,8 +28,8 @@
 }
 
 &__item:not(:last-child) {
-  @media screen and (max-width: 479px) {
-    margin-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
   }
 }
 
@@ -79,6 +79,5 @@
 &__text {
   margin: 0px;
   @include font(14px, 1.71,400,0.03em);
-
-}
+} 
 }
