@@ -24,7 +24,10 @@
 .logo-footer {
   display: block;
   margin-bottom: 20px;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  
 
   font-family: "Raleway", sans-serif;
   @include font(26px,1.19,700);

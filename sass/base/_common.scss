@@ -4,9 +4,6 @@ body {
   letter-spacing: 0.02em;
   padding-top: 60px;
 
-  @include for-size(tablet) {
-  padding-top: 80px;
-  }
 }
 
 ul {

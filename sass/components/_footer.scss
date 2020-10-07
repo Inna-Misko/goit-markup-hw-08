@@ -29,7 +29,9 @@
   margin-bottom: 10px;
   font-style: normal;
   @include font(14px, 1.71, 400);
+  @media screen and (max-width: 1199px) {
   text-align: center;
+  }
 }
 @media screen and (max-width: 1199px) {
   &__list-item:last-child {
